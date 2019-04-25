@@ -3,6 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import model.Pair;
+import model.Password;
+import model.Username;
+
 public class Runner {
 	public static void main(String[] args) {
 		List<String> TODOs = new ArrayList<>();
@@ -20,6 +24,5 @@ public class Runner {
 		Username enteredName = new Username(username);
 		passwords.get(0).setUsername(enteredName);
 		System.out.println("Your new username is: " + enteredName.getUsername());
-		
 	}
 }
