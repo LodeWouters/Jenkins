@@ -1,20 +1,21 @@
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import junit.framework.Assert;
+import org.junit.Test;
 
-class InputTest {
+public class InputTest {
 
 	@Test
-	void checkUsername() {
+	public void checkUsername() {
 		Username username = new Username();
 		username.setUsername("test");
-		Assert.assertEquals("test", username.getUsername());
+		assertEquals("test", username.getUsername());
 	}
 	
 	@Test
-	void checkPassword() {
+	public void checkPassword() {
 		Password password = new Password();
 		password.setPassword("testpwd");
-		Assert.assertEquals("testpwd", password.getPassword());
+		assertEquals("testpwd", password.getPassword());
 	}
 }

@@ -1,4 +1,5 @@
 
+
 public class Password {
 	private String password;
 	private int length;

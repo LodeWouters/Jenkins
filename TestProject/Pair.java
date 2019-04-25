@@ -1,4 +1,5 @@
 
+
 public class Pair<Username, Password> {
 	private Username username;
 	private Password password;
