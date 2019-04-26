@@ -28,11 +28,7 @@
     <path id="TestProject.classpath">
         <pathelement location="."/>
         <path refid="JUnit 5.libraryclasspath"/>
-    	<fileset dir="C:/Users/woutelo/.p2/pool/plugins/org.junit_4.12.0.v201504281640">
-    	            <include name="**/junit.jar" />
-    	        </fileset>
     </path>
-              	
     <target name="init">
         <copy includeemptydirs="false" todir=".">
             <fileset dir=".">
@@ -74,7 +70,7 @@
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="InputTest" todir="${junit.output.dir}"/>
+            <test name="tests.InputTest" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
             <classpath refid="TestProject.classpath"/>
         </junit>
@@ -84,10 +80,37 @@
             <classpath refid="TestProject.classpath"/>
         </java>
     </target>
+    <target name="JInputTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="JInputTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="TestProject.classpath"/>
+        </junit>
+    </target>
+    <target name="AllTests">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.AllTests" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="TestProject.classpath"/>
+        </junit>
+    </target>
+    <target name="InputTest4">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.InputTest4" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="TestProject.classpath"/>
+        </junit>
+    </target>
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">
             <fileset dir="${junit.output.dir}">
-                <include name="**/TEST-*.xml"/>
+                <include name="TEST-*.xml"/>
             </fileset>
             <report format="frames" todir="${junit.output.dir}"/>
         </junitreport>
