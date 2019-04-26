@@ -29,7 +29,7 @@
         <pathelement location="."/>
         <path refid="JUnit 5.libraryclasspath"/>
     	<fileset dir="C:/Users/woutelo/.p2/pool/plugins/org.junit_4.12.0.v201504281640">
-    	            <include name="**/*" />
+    	            <include name="**/junit.jar" />
     	        </fileset>
     </path>
               	
