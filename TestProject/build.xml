@@ -28,7 +28,11 @@
     <path id="TestProject.classpath">
         <pathelement location="."/>
         <path refid="JUnit 5.libraryclasspath"/>
+    	<fileset dir="../../../.p2/pool/plugins/org.junit_4.12.0.v201504281640">
+    	            <include name="**/junit.jar" />
+    	        </fileset>
     </path>
+              	
     <target name="init">
         <copy includeemptydirs="false" todir=".">
             <fileset dir=".">
