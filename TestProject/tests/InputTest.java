@@ -9,6 +9,7 @@ import model.Username;
 
 
 
+
 public class InputTest {
 
 	@Test
