@@ -1,13 +1,11 @@
 package tests;
-/*import static org.junit.Assert.*;
+import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 
 import model.Password;
 import model.Username;
-
-
 
 
 public class InputTest {
@@ -26,4 +24,3 @@ public class InputTest {
 		assertEquals("testpwd", password.getPassword());
 	}
 }
-*/
