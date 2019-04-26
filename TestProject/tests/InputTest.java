@@ -23,4 +23,11 @@ public class InputTest {
 		password.setPassword("testpwd");
 		assertEquals("testpwd", password.getPassword());
 	}
+	
+	@Test
+	public void testCheckPassword2() {
+		Password password = new Password();
+		password.setPassword("testpwd2");
+		assertEquals("testpwd2", password.getPassword());
+	}
 }
