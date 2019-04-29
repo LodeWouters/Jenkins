@@ -80,33 +80,6 @@
             <classpath refid="TestProject.classpath"/>
         </java>
     </target>
-    <target name="JInputTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="JInputTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="TestProject.classpath"/>
-        </junit>
-    </target>
-    <target name="AllTests">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="tests.AllTests" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="TestProject.classpath"/>
-        </junit>
-    </target>
-    <target name="InputTest4">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="tests.InputTest4" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="TestProject.classpath"/>
-        </junit>
-    </target>
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">
             <fileset dir="${junit.output.dir}">
