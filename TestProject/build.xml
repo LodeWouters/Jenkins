@@ -28,6 +28,9 @@
     <path id="TestProject.classpath">
         <pathelement location="."/>
         <path refid="JUnit 5.libraryclasspath"/>
+    	<fileset dir="C:/Users/woutelo/.p2/pool/plugins/org.junit_4.12.0.v201504281640">
+    	    	            <include name="**/junit.jar" />
+    	    	        </fileset>
     </path>
     <target name="init">
         <copy includeemptydirs="false" todir=".">
@@ -66,38 +69,11 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="AllTests">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="tests.AllTests" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="TestProject.classpath"/>
-        </junit>
-    </target>
     <target name="InputTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="tests.InputTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="TestProject.classpath"/>
-        </junit>
-    </target>
-    <target name="InputTest4">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="tests.InputTest4" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="TestProject.classpath"/>
-        </junit>
-    </target>
-    <target name="JInputTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="JInputTest" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
             <classpath refid="TestProject.classpath"/>
         </junit>
