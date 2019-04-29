@@ -47,4 +47,5 @@ public class AppTest
 		password.setPassword("testpwd");
 		assertEquals("testpwd", password.getPassword());
 	}
+	
 }
