@@ -22,5 +22,6 @@ public class InputTest {
 		Password password = new Password();
 		password.setPassword("testpwd");
 		assertEquals("testpwd", password.getPassword());
-	}	
+	}
+	
 }
