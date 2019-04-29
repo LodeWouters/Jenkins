@@ -28,6 +28,7 @@
     <path id="TestProject.classpath">
         <pathelement location="."/>
         <path refid="JUnit 5.libraryclasspath"/>
+        <pathelement location="lib/junit-jupiter-5.4.2.jar"/>
     </path>
     <target name="init">
         <copy includeemptydirs="false" todir=".">
