@@ -20,6 +20,5 @@ public class App
 			Username enteredName = new Username("testnaam");
 			passwords.get(0).setUsername(enteredName);
 			System.out.println("Your new username is: " + enteredName.getUsername());
-			
 	}
 }
