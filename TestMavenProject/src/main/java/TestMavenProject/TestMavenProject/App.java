@@ -26,6 +26,7 @@ public class App
 			
 			System.out.println("\nUsername 2: " + pairs.get(1).getUsername().getUsername() + "\nPassword 2: " + pairs.get(1).getPassword().getPassword());
 			
+			
 			/*
 			System.out.println("\nList of pairs: ");
 			for(int i = 0; i < pairs.size(); i++) {
